@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'blackjack';
+    src: url('../fonts/blackjack/blackjack.eot');
+    src: url('../fonts/blackjack/blackjack.eot') format('embedded-opentype'),
+         url('../fonts/blackjack/blackjack.woff2') format('woff2'),
+         url('../fonts/blackjack/blackjack.woff') format('woff'),
+         url('../fonts/blackjack/blackjack.ttf') format('truetype'),
+         url('../fonts/blackjack/blackjack.svg#GOTHIC') format('svg');
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	 transition:.5s;
+}
+p{
+	margin: 0;
+	font-size: 15px;
+}
+.no_padding{
+	padding: 0 !important;
+}
+.no_pt{
+  padding-top: 0 !important;
+}
+.no_pb{
+  padding-bottom: 0 !important;
+}
+.no_pl{
+  padding-left: 0 !important;
+}
+.no_pr{
+  padding-right: 0 !important;
+}
+.no_margin{
+	margin: 0 !important;
+}
+.no_border{
+	border: none !important;
+}
+.center{
+	margin: auto !important;
+	display: inline-block !important;
+	float: none;
+}
+.white{
+	color: #fff !important;
+}
+.black{
+	color: #000 !important;
+}
+.gallery_section{
+	background: url(../images/gallery_bg.jpg) center center no-repeat;  
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.gallery_section .container {
+    max-width: 1450px;
+    width: 100%;
+}
+.gallery_section{
+	padding: 7px; 
+}
+.gallery_block{
+	width: 33.3%;
+	padding: 7px;
+	box-sizing: border-box;
+	float: left;
+}
+.in_block{
+	background: #fff;
+	width: 100%;
+}
+.gallery_block .left{
+	width: 50%;
+	vertical-align: top;
+	float: left;
+	height: auto;
+}
+.gallery_block .right{
+	width: 50%;
+	padding: 20px 15px 10px 15px;
+	color: #2a317c;
+	vertical-align: top;
+	float: left;
+	height: auto;
+}
+.gallery_block .right h2{
+	font-family: 'blackjack';
+	font-size: 24px;
+	margin: 0 0 10px 0;
+}
+.gallery_block .right p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13.5px;
+	font-weight: 400;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.row_two .left{
+	float: right;
+}
+.row_two .right{
+	float: left;
+}
+.left img{
+	width: 100%;
+	height: auto;
+}
+.more {
+    color: #5E9DA4;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+}
+/*header*/
+
+@media(max-width: 1450px){
+.gallery_block .right{
+	padding: 20px 15px 10px 15px;
+}
+.gallery_block .right p {
+    font-size: 12px;
+}
+.gallery_block .right h2 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+}
+
+@media(max-width: 1280px){
+
+.gallery_block .right{
+	padding: 15px 5px 8px 10px;
+}
+.gallery_block .right h2{
+   font-size: 20px;
+   margin-bottom: 5px;	
+}
+.smalldesc {
+    height: 84px;
+    overflow:hidden;
+	padding-right: 10px;
+}
+.bigdesc {
+    height: 84px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+.more {
+	display: block;
+}
+}
+
+@media(max-width: 1024px){
+.gallery_block{
+	width: 50%;
+}
+.gallery_block .right{
+	padding: 15px;
+}
+.gallery_block .right h2{
+	font-size: 22px;
+}
+.gallery_block .right p{
+	font-size: 13.5px;
+	height: auto;
+	padding-right: 0;
+}
+.row_two .left{
+	float: left;
+}
+.row_two .right{
+	float: right;
+}
+.more {
+    display: none;
+}
+.smalldesc {
+    overflow:inherit;
+}
+.bigdesc {
+    overflow-y: inherit;
+    overflow-x: inherit;
+}
+}
+
+@media(max-width: 990px){
+.gallery_block .right p {
+    height: 100px;
+}
+.header_section{
+	text-align: center;
+}
+.gallery_block .left,
+.gallery_block .right{
+    width: 100%;
+    float: left;
+    display: block;
+}
+}
+
+@media(max-width: 767px){
+.gallery_block{
+	vertical-align: top;
+	width: 49.5%;
+}
+.right {
+    padding: 25px 20px 25px 20px;
+}
+.gallery_block .right p{
+   height: 110px;
+}
+}
+
+@media(max-width: 640px){
+.gallery_block{
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery_block .right h2{
+	font-size: 22px;
+}
+.gallery_block .right p {
+    height: auto;
+}
+}
+
+
+
+
